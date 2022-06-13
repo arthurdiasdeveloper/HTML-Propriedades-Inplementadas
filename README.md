@@ -1,0 +1,16 @@
+# HTML-Propriedades-Inplementadas
+Implementações das principais propriedades do HTML
+![Alt text](Screenshots/01.png?raw=true  "first Page")
+![Alt text](Screenshots/02.png?raw=true  "Second Page")
+![Alt text](Screenshots/03.png?raw=true  "Tree Page")
+![Alt text](Screenshots/04.png?raw=true  "Four Page")
+![Alt text](Screenshots/05.png?raw=true  "five Page")
+![Alt text](Screenshots/06.png?raw=true  "six Page")
+![Alt text](Screenshots/07.png?raw=true  "seven Page")
+![Alt text](Screenshots/08.png?raw=true  "eight Page")
+![Alt text](Screenshots/09.png?raw=true  "nine Page")
+![Alt text](Screenshots/10.png?raw=true  "tem Page")
+![Alt text](Screenshots/11.png?raw=true  "eleven Page")
+![Alt text](Screenshots/12.png?raw=true  "thwelve Page")
+![Alt text](Screenshots/13.png?raw=true  "thirten Page")
+![Alt text](Screenshots/14.png?raw=true  "fourteen Page")
