@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos do flex box - flex flow</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 500px;
+            margin-bottom: 10px;
+
+        }
+
+        .default {
+            flex-flow: row nowrap;
+
+        }
+        .wrap{
+            flex-flow: row wrap;
+        }
+        .wrap-reverse{
+            flex-flow:wrap-reverse;
+        }
+        .nowrap-reverse{
+            flex-flow: row-reverse nowrap;
+        }
+        .row-reverse-wrap{
+            flex-flow: row-reverse wrap;
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+
+
+        }
+        .espacoUm{
+            padding: 30px;
+        }
+        .espacoDois{
+            padding: 30px;
+        }
+        .espacoTres{
+            padding: 30px;
+        }
+        .espacoQuatro{
+            padding: 30px;
+        }
+        .espacoCinco{
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="espacoUm">
+        <h1>Default: row nowrap</h1>
+        <div class="flex-container default">
+
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
+    <div class="espacoDois">
+        <h1>Default: row wrap</h1>
+    <div class="flex-container default wrap">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+</div>
+
+<div class="espacoTres">
+    <h1>Default: row wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+
+    <div class="espacoQuatro">
+        <h1>Default: row-reverse nowrap</h1>
+        <div class="flex-container nowrap-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+    
+        </div>
+
+        <div class="espacoCinco">
+            <h1>Default: row-reverse-wrap</h1>
+            <div class="flex-container row-reverse-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+        
+            </div>
+</div>
+</body>
+
+</html>

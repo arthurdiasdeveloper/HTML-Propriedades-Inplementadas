@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flexbox - parte 2 - shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+
+
+        }
+        .item{
+            margin: 5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+
+        }
+        .S-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .S-1{
+            flex-shrink: 1;
+        }
+        .S-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .S-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        .FG-0{
+            flex-grow: 0;
+        }
+
+        .FG-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Shirink: 1</p>
+
+    <div class="flex-container">
+        <div class="item S-1 FG-1">A</div>
+        <div class="item S-1 FG-1">B</div>
+        <div class="item S-1 FG-1">C</div>
+        <div class="item S-1 FG-1">D</div>
+        <div class="item S-1 FG-1">E</div>
+    </div>
+
+    <p>Shirink: 2</p>
+
+    <div class="flex-container">
+        <div class="item S-1 FG-1">A</div>
+        <div class="item S-1 FG-1">Lorem Ipsum has been the industry's</div>
+        <div class="item S-1 FG-1">C</div>
+        <div class="item S-1 FG-1">D</div>
+       
+    </div>
+
+    <p>Shirink: 0/ basis em 100px</p>
+
+    <div class="flex-container">
+        <div class="item S-0 FG-1">A</div>
+        <div class="item S-0 FG-1">Lorem Ipsum has been the industry's</div>
+        <div class="item S-0 FG-1">C</div>
+        <div class="item S-0 FG-1">D</div>
+       
+    </div>
+
+    <p>Shirink: Mix/ basis em 100px</p>
+
+    <div class="flex-container">
+        <div class="item S-2 FG-1">A</div>
+        <div class="item S-2 FG-1">Lorem Ipsum has been the industry's</div>
+        <div class="item S-2 FG-1">C</div>
+        <div class="item S-3 FG-1">D</div>
+       
+    </div>
+</body>
+</html>

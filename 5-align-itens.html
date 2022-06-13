@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-itens</title>
+    <style>
+        .conteiner{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            align-items: center;
+            /* Flex ira tratar do tamanho da distribuicao dos nossos itens */
+            flex: 1;
+
+        }
+        .flex{
+            flex: 1;
+        }
+        /* Respeita a orientacao da linha e, ira preenchendo o 
+        espaco assim que adicionar mais texto */
+        .center{
+            align-items: center;
+        }
+        /* Stretch: Os itens vao crescer de acordo com o maior item */
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        /* O texto será adicionado de acordo com
+        a linha base. Ou seja, serao inseridos, nesse caso,
+        de cima para baixo */
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            /* Alinha os itens do conteiner de acordo com sua direcao */
+            justify-content: center;
+        }
+        /* Essa propriedade se utiliza para atingir os itens dentro da div
+        Entao os parametros como flex: removerao algumas propriedades
+        para deixar ele em obediencia ao centro da tela */
+        .central .item{
+            padding: 20px;
+            flex: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="conteiner center flex">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>
+
+    <p>Stretch</p>
+    <section class="conteiner center stretch">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="conteiner flex-start ">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="conteiner flex-end ">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>  
+
+    <p>Baseline</p>
+    <section class="conteiner baseline ">
+        <div class="item"><br>Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>  
+
+
+
+
+    <h1>Column</h1>
+    <p>flex-start</p>
+    <section class="conteiner flex-start column">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>
+
+
+    <p>flex-end</p>
+    <section class="conteiner flex-end column ">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>  
+    <p>Center</p>
+
+
+    <section class="conteiner center column">
+        <div class="item">Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>
+
+
+    <p>Baseline</p>
+    <section class="conteiner baseline column ">
+        <div class="item"><br>Item 01</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+        <div class="item">Item 02</div>
+    </section>  
+
+    <h1>Nova Section</h1>
+
+    <p>Alinhamento Central a tela</p>
+    <section class="conteiner central center">
+        <div class="item">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  </div>
+    </section>
+</body>
+</html>

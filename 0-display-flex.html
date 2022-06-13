@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - display flex</title>
+    <style>
+        /* Sequencia 1 criacao das classes flex e item */
+        /* A classe flex delimita o meu container. Defini isso na div */
+        .flex{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black;
+            /* Com o display felx, cada item passa utilizar 
+            o maximo do seu conteudo e se abriga dentro do container
+            respeitando a orientacao em linha
+             */
+            display: flex;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <!-- Sequencia 2 div.item*3 com a tecla tab
+        insere as tres divs abaido -->
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fundamentos -  Flex Direction</title>
+
+    <style>
+        /* O conteiner ira dar a direcao para o componente pai
+        UL */
+        .flex-container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+        /* Flex itens ira dar direcao para o li componente filho */
+        .flex-itens{
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        /* Orientacao da esquerda para direita */
+        .row{
+            flex-direction: row;
+        }
+
+
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+
+
+        /* Orientacao da direita para esquerda */
+        .row-reverse li{
+            background-color: red;
+        
+        }
+
+        .colum{
+            float: left;
+            flex-direction: column;
+        }
+
+        .colum li{
+            background-color: yellowgreen;
+        }
+
+        .colum-reverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+        .colum-reverse li{
+            
+            background-color: violet;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <ul class="flex-container">
+        <li class="flex-itens">1</li>
+        <li class="flex-itens">2</li>
+        <li class="flex-itens">3</li>
+        <li class="flex-itens">4</li>
+        <li class="flex-itens">5</li>
+    </ul>
+    
+    <ul class="flex-container row-reverse">
+        <li class="flex-itens">1</li>
+        <li class="flex-itens">2</li>
+        <li class="flex-itens">3</li>
+        <li class="flex-itens">4</li>
+        <li class="flex-itens">5</li>
+    </ul>
+
+    <ul class="flex-container colum">
+        <li class="flex-itens">1</li>
+        <li class="flex-itens">2</li>
+        <li class="flex-itens">3</li>
+        <li class="flex-itens">4</li>
+        <li class="flex-itens">5</li>
+    </ul>
+
+    <ul class="flex-container colum-reverse">
+        <li class="flex-itens">1</li>
+        <li class="flex-itens">2</li>
+        <li class="flex-itens">3</li>
+        <li class="flex-itens">4</li>
+        <li class="flex-itens">5</li>
+    </ul>
+</body>
+</html>
